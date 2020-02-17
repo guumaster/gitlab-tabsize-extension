@@ -1,0 +1,24 @@
+{
+  "name": "gitlab-tabsize",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Change Gitlab Tabsize to 2 as default",
+  "homepage_url": "http://github.com/guumaster/gitlab-tabsize-extension",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    }
+  ]
+}
