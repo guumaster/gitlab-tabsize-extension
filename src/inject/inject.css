@@ -1,4 +1,24 @@
+/* gitlab */
  .diff-files-holder,
- .file-holder {
-  tab-size: 4;
+ .file-holder
+{
+  tab-size: 2 !important;
+}
+
+/* sonar cloud */
+.source-viewer-code.snippet
+{
+  tab-size: 2 !important;
+}
+
+/* github */
+.tab-size[data-tab-size='2'],
+.tab-size[data-tab-size='4'],
+.tab-size[data-tab-size='8'],
+.inline-review-comment,
+.gist table.lines,
+table.diff-table,
+.markdown-body pre,
+body > pre {
+	tab-size: 2 !important;
 }
